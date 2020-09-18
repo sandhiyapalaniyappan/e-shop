@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+.cart-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 32px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+    background-color: #EEEEEE;
+}
+.cart-item span{
+    color: cadetblue;
+    font-size: larger;
+}
+.icontext{
+    font-size: medium;
+    font-weight: 500;
+}

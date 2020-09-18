@@ -1,0 +1,71 @@
+<!--
+  <div class="container">
+    <div class="col-md-6 col-md-offset-3 loginBox">
+        <h3>Log In</h3>
+        <p *ngIf="message" class="text-center error">{{message}}</p>
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+          <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.userid.errors }">
+              <label for="userid" class="col-md-3 col-sm-5 col-xs-12" style="font-size: medium; font-weight: 500;">User Id</label>
+              <div class="col-md-9 col-sm-7 col-xs-12">
+                  <input type="text" class="form-control" formControlName="userid" />
+                  <div *ngIf="submitted && f.userid.errors" class="help-block">
+                        <div *ngIf="f.userid.errors.required">Userid is required</div>
+                  </div>
+              </div>
+          </div>
+          <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.password.errors }">
+            <label for="password" class="col-md-3 col-sm-5 col-xs-12" style="font-size: medium; font-weight: 500;">Password</label>
+            <div class="col-md-9 col-sm-7 col-xs-12">
+                <input type="password" class="form-control" formControlName="password"/>
+                <div *ngIf="submitted && f.password.errors" class="help-block">
+                        <div *ngIf="f.password.errors.required">Password is required</div>
+                </div>
+            </div>
+          </div>
+          <div class="col-xs-12 form-group text-left">
+            <button class="btn btn-success" type="submit">Login</button>
+          </div>
+          <div class="bottom-action clearfix">
+            <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
+            <a href="#" class="float-right">Forgot Password?</a>
+          </div>
+          <div class="text-center small" style="font-weight: 500; font-size: 15px;color: rgb(0, 72, 139);">New to Flipkart?<a href="#">Sign up here!</a></div>
+      </form>
+    </div>
+</div>
+-->
+
+<div class="sidenav">
+  <div class="login-main-text">
+     <h2>Login Page</h2>
+  </div>
+<div class="main">
+  <div class="col-md-6 col-sm-12">
+     <div class="login-form">
+      <p *ngIf="message" class="text-center error">{{message}}</p>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+           <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.userid.errors }">
+              
+              <input type="text" placeholder="User Id" class="form-control" formControlName="userid"/>
+              <div *ngIf="submitted && f.userid.errors" class="help-block">
+                <div *ngIf="f.userid.errors.required">Userid is required</div>
+             </div>
+           </div>
+           <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.password.errors }">
+            
+              <input type="password" placeholder="Password" class="form-control" formControlName="password"/>
+              <div *ngIf="submitted && f.password.errors" class="help-block">
+                <div *ngIf="f.password.errors.required">Password is required</div>
+              </div>
+           </div>
+           <button type="submit" class="btn btn-success">Login</button>
+           <br>
+           <br>
+          <div class="text-center small" style="font-weight: 500; font-size: 15px;color: royalblue;">New to Flipkart?<a href="#">Sign up here!</a></div>
+        </form>
+     </div>
+  </div>
+</div>
+</div>
+
+

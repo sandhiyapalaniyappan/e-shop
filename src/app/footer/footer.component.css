@@ -1,0 +1,53 @@
+.footer{
+    background: rgb(16, 20, 46);
+    color: white;
+}
+.footer .container {
+    padding: 0px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.first {
+    flex: 1;
+    text-align: center;
+}
+.first h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    margin-left: 40px;
+}
+
+.second {
+    flex: 1;
+    text-align: center;
+}
+.second h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    margin-left: 40px;
+}
+
+.third {
+    flex: 1;
+}
+.third h4{
+    margin-top: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+.third p{
+    font-size: 12px;
+}
+.footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+}
+.list {
+    list-style: none;
+    text-align: center;
+    font-size: 12px;
+    
+}

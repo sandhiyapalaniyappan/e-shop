@@ -1,0 +1,28 @@
+.container {
+    background: #f8f9fa !important;
+    display: flex;
+    justify-content: center;
+    padding: 20px 2%;
+    font-weight: 400;
+    color: black;
+}
+.product-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    background: #fff;
+}
+.product-description {
+    flex: 1;
+    background: #fff;
+    padding-left: 20px;
+}
+.buy-now-button {
+    border-radius: 0;
+}
+.buy-now-button.space {
+    margin-right: 10px;
+}
+

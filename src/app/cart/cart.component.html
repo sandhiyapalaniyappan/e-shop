@@ -1,0 +1,45 @@
+<div class="card">
+    <div class="card-body">
+            <h2 class="card-title" style="font-weight: 500;">Review Cart</h2>
+            <div class="cart-item" *ngFor="let item of items">
+                <span>{{ item.name }} </span>
+                <span>{{ item.price | currency:'INR' }}</span>
+            </div>
+        </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-6 m-auto">
+    <div class="card m-auto">
+        <div class="card-body">
+    <h2 class="card-title">Feedback</h2>
+    
+    <form>
+      <div class="form-group col-12">
+          <label>Email</label>
+            <input type="text" class="form-control" placeholder="">
+      </div> <!-- form-group end.// -->
+      <div class="form-group col-12">
+          <label>Feedback Type</label>
+          <select class="form-control">
+              <option>Select</option>
+              <option>Technical issue</option>
+              <option>Money refund</option>
+              <option>Recommendation</option>
+          </select>
+      </div>
+      <div class="form-group col-12">
+          <label>Comment</label>
+          <textarea class="form-control" rows="5"></textarea>
+      </div>
+      <button (click)="onSubmit()" class="btn btn-primary btn-block">Send</button>
+    </form>
+    </div>
+  </div>
+  </div>
+  </div>
+<p class="icontext" style="text-align: center;">
+    <i class="icon text-success fa fa-truck"></i> 
+    Free Delivery within 1-2 weeks
+</p>
+      
