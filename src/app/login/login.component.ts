@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
     });
     this.returnUrl = '/home';
     this.authService.logout();
+    
   }
   get f() { 
     return this.loginForm.controls; 
