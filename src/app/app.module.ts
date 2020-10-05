@@ -26,10 +26,14 @@ import { MenComponent } from './men/men.component';
 import { WomenComponent } from './women/women.component';
 import { RouterModule, Routes } from '@angular/router';
 import { KidsComponent } from './kids/kids.component';
+import { MainComponent } from './main/main.component';
+import { NextComponent } from './next/next.component';
 export const routes : Routes= [
   {path:'men',component:MenComponent},
   {path:'women',component:WomenComponent},
-  {path:'kids',component:KidsComponent}
+  {path:'kids',component:KidsComponent},
+  {path:'main',component:MainComponent},
+ 
 ];
 @NgModule({
   declarations: [
@@ -43,7 +47,9 @@ export const routes : Routes= [
     CartComponent,
     MenComponent,
     WomenComponent,
-    KidsComponent
+    KidsComponent,
+    MainComponent,
+    NextComponent
   ],
   imports: [
     BrowserModule,

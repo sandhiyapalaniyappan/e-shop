@@ -23,8 +23,8 @@ export class LoginComponent implements OnInit {
       userid: ['', Validators.required],
       password: ['', Validators.required]
     });
-    this.returnUrl = '/home';
-    this.authService.logout();
+    this.returnUrl = '/main';
+
   }
   get f() { 
     return this.loginForm.controls; 
