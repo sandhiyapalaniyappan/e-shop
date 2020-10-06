@@ -22,12 +22,27 @@
             </div>
     </mat-toolbar-row>
 </mat-toolbar>
-<mat-sidenav-container>
-    <mat-sidenav #drawer mode="side" opened role="navigation" style="background-color: #00B4CC;">
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #drawer mode="side" opened role="navigation" class="example-sidenav" style="background-color: #00B4CC;">
        <mat-nav-list style="width: 150px;">
-        <a mat-list-item routerLink="/men"> Men </a>
-        <a mat-list-item routerLink="/women"> Women </a>
-        <a mat-list-item routerLink="/kids"> Kids </a>  
+       <!-- <mat-list-item>
+          <a routerLink='slider' >Men</a>
+        </mat-list-item>
+        <br>
+       <mat-list-item>
+         <a routerLink='details' >Women</a>
+       </mat-list-item>
+       <br>
+       <mat-list-item>
+         <a routerLink='products'>Kids</a>
+       </mat-list-item>
+       <br>
+       <mat-list-item>
+        <a routerLink="javascript:void(0);" (click)="logout()" >Logout</a>
+      </mat-list-item>-->
+        <a mat-list-item routerLink='men'> Men </a>
+        <a mat-list-item routerLink='women'> Women </a>
+        <a mat-list-item routerLink='kids'> Kids </a>  
         <a mat-list-item routerLink="javascript:void(0);" (click)="logout()">Logout</a>
       </mat-nav-list>
     </mat-sidenav> 

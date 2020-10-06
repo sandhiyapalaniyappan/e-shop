@@ -1,0 +1,25 @@
+{
+    "kids": [
+      {
+        "id": 5,
+        "name": "Cotton Ethnic Wear ",
+        "price": 1285,
+        "image": "https://assets.panashindia.com/media/catalog/product/cache/1/small_image/262x377/9df78eab33525d08d6e5fb8d27136e95/1/9/195kw04-485-kids-nc.jpg"
+        
+      },
+      {
+        "id": 6,
+        "name": "Cotton Angrakha Style ",
+        "price": 1099,
+        "image": "https://i.pinimg.com/originals/b4/26/cc/b426ccebc7f57921711213a193e5a8f9.jpg"
+        
+      },
+      {
+        "id": 7,
+        "name": "Kids Dhoti ",
+        "price": 785,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/31F-XtuKfwL.jpg"
+        
+      }
+    ]
+}

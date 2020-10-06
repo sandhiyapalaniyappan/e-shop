@@ -1,0 +1,23 @@
+<div style="border: 1px solid #c3c3c3;flex-wrap: wrap;display: flex;">
+    <b> <h1 style="color: black;">Kid's Wear &nbsp;</h1></b>
+ <button style="margin:0 0 0 850px;padding: 0px;" type="submit" class="btn btn-primary"  mat-button>VIEW ALL </button>
+ </div>
+
+ <div style="border: 1px solid #c3c3c3;" >
+ <div class="row product_list" style="margin: 1em 0;">
+ <div class="col-sm-12 col-md-3  shop_item" *ngFor="let kids of kidsData?.kids; let i = index;">
+     <div class="card-mb-4  shadow-sm pd-5" >
+         <div class="product_list_image">
+             <img class="card-img-top"  style="height :250px;" src="{{kids.image}}" alt="Card image">
+         </div>
+         <div class="card-body">
+             <h4>{{kids.name}}</h4>
+             <h3  class="card-text text-left  mb-0">Price:<span class="font-weight-bold float-right text-success">{{kids.price | currency:'INR'}}</span></h3>
+        <a [routerLink]="['/details/',kids.id]" routerLinkActive="active" style="text-decoration: none;">
+              View
+            </a>
+         </div>
+     </div>
+ </div>
+ </div></div>
+<br><br><br><br>

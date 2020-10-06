@@ -1,0 +1,20 @@
+{
+    "male": [
+
+      {
+        "id": 0,
+        "name": "Formal Multicolor Shirt ",
+        "price": 499,
+        "image": "https://chkokkobanners.azureedge.net/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/5/1500_0033_1-min.jpg"
+        
+      },
+      {
+        "id": 1,
+        "name": "Hooded Neck T-Shirt ",
+        "price": 535,
+        "image": "https://5.imimg.com/data5/BF/WF/MY-4510675/automobile-industry-uniform-500x500.jpg"
+        
+      }
+      
+    ]
+}
