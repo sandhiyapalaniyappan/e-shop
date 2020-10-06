@@ -22,7 +22,19 @@ import { FooterComponent } from './footer/footer.component';
 import { DetailsComponent } from './details/details.component';
 import { SliderComponent } from './slider/slider.component';
 import { CartComponent } from './cart/cart.component';
-
+import { MenComponent } from './men/men.component';
+import { WomenComponent } from './women/women.component';
+import { RouterModule, Routes } from '@angular/router';
+import { KidsComponent } from './kids/kids.component';
+import { MainComponent } from './main/main.component';
+import { NextComponent } from './next/next.component';
+export const routes : Routes= [
+  {path:'men',component:MenComponent},
+  {path:'women',component:WomenComponent},
+  {path:'kids',component:KidsComponent},
+  {path:'main',component:MainComponent},
+ 
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +44,12 @@ import { CartComponent } from './cart/cart.component';
     FooterComponent,
     DetailsComponent,
     SliderComponent,
-    CartComponent
+    CartComponent,
+    MenComponent,
+    WomenComponent,
+    KidsComponent,
+    MainComponent,
+    NextComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +57,7 @@ import { CartComponent } from './cart/cart.component';
     NgImageSliderModule,
     MatToolbarModule,MatIconModule,MatButtonModule,MatListModule,MatSidenavModule,
     MatFormFieldModule,FormsModule,ReactiveFormsModule,MatCardModule,HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule, RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
