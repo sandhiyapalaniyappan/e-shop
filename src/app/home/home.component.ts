@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { HttpClient,HttpErrorResponse } from "@angular/common/http";
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
+import { JsonService } from '../json.service';
 
 @Component({
   selector: 'app-home',
@@ -13,11 +14,12 @@ import { catchError, retry } from 'rxjs/operators';
 export class HomeComponent implements OnInit {
   id: string;
   productsData: any;
-  constructor(private router: Router,public authService: AuthService,private httpClient: HttpClient) { }
+  constructor(private router: Router,public authService: AuthService,private httpClient: HttpClient,
+    private jsonService: JsonService) { }
 
   ngOnInit() {
     this.id = localStorage.getItem('token');
-    this.httpClient.get<any>("assets/data/products.json").subscribe((data)=>
+    this.jsonService.getData().subscribe((data)=>
       this.productsData = data
     )
   }
