@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class CartComponent implements OnInit {
   items;
+  quantity: number;
+  
   constructor(private cartService: CartService,private router: Router) {
     this.items = this.cartService.getItems();
    }
