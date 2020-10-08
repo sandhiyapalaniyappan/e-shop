@@ -22,6 +22,12 @@ import { FooterComponent } from './footer/footer.component';
 import { DetailsComponent } from './details/details.component';
 import { SliderComponent } from './slider/slider.component';
 import { CartComponent } from './cart/cart.component';
+import { LayoutComponent } from './layout/layout.component';
+import { HomelayoutComponent } from './homelayout/homelayout.component';
+import { ProfileComponent } from './profile/profile.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
+
 
 @NgModule({
   declarations: [
@@ -32,16 +38,21 @@ import { CartComponent } from './cart/cart.component';
     FooterComponent,
     DetailsComponent,
     SliderComponent,
-    CartComponent
+    CartComponent,
+    LayoutComponent,
+    HomelayoutComponent, 
+    ProfileComponent
   ],
+ 
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgImageSliderModule,
     MatToolbarModule,MatIconModule,MatButtonModule,MatListModule,MatSidenavModule,
-    MatFormFieldModule,FormsModule,ReactiveFormsModule,MatCardModule,HttpClientModule,
+    MatFormFieldModule,FormsModule,ReactiveFormsModule,MatCardModule,HttpClientModule,MatDialogModule,
     BrowserAnimationsModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

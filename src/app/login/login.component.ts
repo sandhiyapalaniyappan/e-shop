@@ -10,7 +10,7 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  model: Login = { userid: "Rajamaheswari", password: "mahi123" };
+  model: Login = { userid: "meenu", password: "a" };
   loginForm: FormGroup;
   message: string;
   returnUrl: string;
@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
       userid: ['', Validators.required],
       password: ['', Validators.required]
     });
-    this.returnUrl = '/home';
+    this.returnUrl = '/homelayout';
     this.authService.logout();
     
   }
